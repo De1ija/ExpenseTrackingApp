@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExpenseTrackingApp</string>
+    <string name="total_spent_label">Total spent:</string>
+    <string name="amount_label">Amount:</string>
+    <string name="category_label">Category:</string>
+    <string name="enter_button">Enter Expense</string>
+    <string name="title_expense_activity">Enter Expense</string>
+    <string name="expense_dialog_title">Enter new expense:</string>
+
+    <string name="amount_top_label">Amount</string>
+    <string name="category_top_label">Category</string>
+    <string name="date_top_label">Date</string>
+    <string name="menu_delete_expenses">Delete all expenses</string>
+</resources>

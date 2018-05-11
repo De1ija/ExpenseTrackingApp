@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_spent_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_spent_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/total_spent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="500"
+            app:layout_constraintLeft_toRightOf="@id/total_spent_label_tv"
+            app:layout_constraintTop_toTopOf="@id/total_spent_label_tv"/>
+
+    </android.support.constraint.ConstraintLayout>-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/amount_top_label"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/top_label_textview_margin"
+            android:text="@string/amount_top_label"
+            android:textStyle="bold"
+            android:textSize="@dimen/top_label_textview_text_size"/>
+
+        <TextView
+            android:id="@+id/category_top_label"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/top_label_textview_margin"
+            android:text="@string/category_top_label"
+            android:textStyle="bold"
+            android:textSize="@dimen/top_label_textview_text_size"/>
+
+        <TextView
+            android:id="@+id/timestamp_top_label"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/top_label_textview_margin"
+            android:text="@string/date_top_label"
+            android:textStyle="bold"
+            android:textSize="@dimen/top_label_textview_text_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/expenses_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/expense_insert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dolar_fab"
+            android:layout_margin="@dimen/fab_margin"/>
+    </RelativeLayout>
+
+</LinearLayout>
